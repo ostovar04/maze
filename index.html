@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fffaf7" />
+    <meta name="description" content="سفارش غذای تازه و خوشمزه از رستوران‌های نزدیک شما." />
+    <title>مزه‌طوری | هر مزه، یک ماجرا</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="mobile-header">
+        <button class="header-icon bell" type="button" aria-label="اعلان‌ها"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9m-8 12h4"/></svg><i></i></button>
+        <a class="address-pill" href="#location" data-go="restaurants"><span><svg class="address-pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><b>موقعیت من</b></span><small id="address-label">آدرس تحویل را مشخص کن <span>⌄</span></small></a>
+        <a class="header-icon cart" href="#popular" aria-label="سبد خرید"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.3 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span class="cart-count">۰</span></a>
+      </header>
+      <header class="desktop-header">
+        <a class="brand" href="#home" data-go="menu"><span class="brand-hat"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 20a8 8 0 0 1-1-15 9 9 0 0 1 17 2 6 6 0 0 1 1 12v4H8v-3Z"/><path d="M8 23h17m-14 4h11"/></svg></span>مزه‌طوری<span class="brand-stroke"></span></a>
+        <nav><a class="active" href="#home" data-go="menu">انتخاب غذا</a><a href="#location" data-go="restaurants">رستوران‌یابی</a><a href="#tracking" data-go="order">سفارش من</a></nav>
+        <a class="desktop-address" href="#location" data-go="restaurants">⌖ <span id="desktop-address-label">انتخاب موقعیت</span></a>
+        <a class="header-icon cart" href="#popular" aria-label="سبد خرید"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.3 11.2a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 1.9-1.4L22 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg></a>
+      </header>
+      <main id="home">
+        <section class="home-content">
+          <div class="menu-screen workflow-screen" data-screen="menu">
+          <section class="categories-section" id="categories">
+            <div class="section-title"><span></span><h1>دسته‌بندی غذاها</h1><span></span></div>
+            <div class="category-grid">
+              <button class="category-card food-card" data-food="kebab" aria-pressed="false"><img src="/images/kebab-premium.jpg" alt="کباب ایرانی با برنج زعفرانی" fetchpriority="high"/><b>ایرانی</b></button>
+              <button class="category-card food-card" data-food="pizza" aria-pressed="false"><img src="/images/pizza-premium.jpg" alt="پیتزای پپرونی" loading="lazy" decoding="async"/><b>پیتزا</b></button>
+              <button class="category-card food-card" data-food="chicken" aria-pressed="false"><img src="/images/burger-premium.jpg" alt="برگر تازه با سیب‌زمینی" loading="lazy" decoding="async"/><b>برگر</b></button>
+              <button class="category-card food-card" data-food="pasta" aria-pressed="false"><img src="/images/stew-premium.jpg" alt="خورش خانگی ایرانی" loading="lazy" decoding="async"/><b>خانگی</b></button>
+              <button class="category-card food-card" data-food="breakfast" aria-pressed="false"><img src="/images/breakfast.jpg" alt="صبحانهٔ ایرانی" loading="lazy" decoding="async"/><b>صبحانه</b></button>
+              <button class="category-card food-card" data-food="drink" aria-pressed="false"><img src="/images/drink.jpg" alt="نوشیدنی خنک" loading="lazy" decoding="async"/><b>نوشیدنی</b></button>
+              <button class="category-card food-card" data-food="dessert" aria-pressed="false"><img src="/images/dessert.jpg" alt="دسر شکلاتی" loading="lazy" decoding="async"/><b>دسر</b></button>
+              <button class="category-card food-card" data-food="salad" aria-pressed="false"><img src="/images/salad.jpg" alt="سالاد تازه" loading="lazy" decoding="async"/><b>سالاد</b></button>
+            </div>
+          </section>
+          <a class="featured-banner" href="#popular" aria-label="پیشنهادهای ویژه امروز"><img src="/images/featured.jpg" alt="کباب تازه و برنج ایرانی، پیشنهاد ویژه امروز"/><span class="banner-dots"><i></i><i class="selected"></i><i></i></span></a>
+          <section class="popular-section" id="popular">
+            <div class="section-title"><span></span><h2>محبوب‌ترین غذاهای ایرانی</h2><span></span></div>
+            <div class="popular-cards">
+              <article class="meal-card"><img src="/images/stew-premium.jpg" alt="خورش قیمه خانگی" loading="lazy" decoding="async"/><div class="meal-info"><b>قیمه نذری</b><strong>۲۹۰,۰۰۰ تومان</strong></div><button class="add-button" type="button" aria-label="افزودن قیمه نذری به سبد">+</button></article>
+              <article class="meal-card"><img src="/images/jo-clean.png" alt="جوجه‌کباب زعفرانی با برنج" loading="lazy" decoding="async"/><div class="meal-info"><b>جوجه کباب</b><strong>۳۷۵,۰۰۰ تومان</strong></div><button class="add-button" type="button" aria-label="افزودن جوجه کباب به سبد">+</button></article>
+              <article class="meal-card"><img src="/images/kebab-premium.jpg" alt="چلو کباب کوبیده" loading="lazy" decoding="async"/><div class="meal-info"><b>چلو کباب کوبیده</b><strong>۳۹۵,۰۰۰ تومان</strong></div><button class="add-button" type="button" aria-label="افزودن چلو کباب به سبد">+</button></article>
+            </div>
+          </section>
+          <div class="menu-next-row"><div class="basket-summary"><span>انتخابت آماده‌ست؟</span><b id="basket-summary">هنوز غذایی انتخاب نشده</b></div><button class="primary-button" id="find-restaurants" type="button" disabled>تایید غذا و پیدا کردن رستوران <span>←</span></button></div>
+          </div>
+          <div class="restaurants-screen workflow-screen" data-screen="restaurants" hidden>
+            <div class="page-intro"><span class="eyebrow"><i></i> مزه‌های نزدیک تو</span><h1>کجا <em>مزه‌طوری</em>؟</h1><p>موقعیتت را روی نقشه مشخص کن تا رستوران‌های مناسب غذایت را پیدا کنیم.</p></div>
+          </div>
+          <section class="tracking-section section-pad workflow-screen" data-screen="order" id="tracking" aria-labelledby="tracking-title" hidden>
+            <div class="tracking-heading"><div><span class="tracking-kicker"><i></i> سفارش تو</span><h2 id="tracking-title">از آشپزخانه تا <em>درِ خانه</em></h2><p id="order-intro">رستوران را انتخاب کن تا جزییات سفارشت را ببینی.</p></div><span class="order-number">سفارش <b id="order-number">—</b></span></div>
+            <div class="empty-order" id="empty-order"><span>▤</span><b>هنوز سفارشی نداری</b><p>از خانه یک غذا انتخاب کن تا جزییات آزمایشی سفارش اینجا ذخیره شود.</p><button class="primary-button" type="button" data-go="menu">انتخاب غذا <span>←</span></button></div>
+            <div class="checkout-card" id="checkout-card"><div class="checkout-title"><span>۱</span><div><b>تایید رستوران و سفارش</b><small id="checkout-restaurant">هنوز رستورانی انتخاب نشده</small></div></div><div class="checkout-lines"><span id="checkout-food">غذا انتخاب نشده</span><b id="checkout-price">—</b><span>هزینهٔ ارسال</span><b>رایگان</b></div><div class="payment-options"><b>روش پرداخت</b><label><input type="radio" name="payment" value="online" checked/> پرداخت آنلاین <small>درگاه پرداخت نمایشی</small></label><label><input type="radio" name="payment" value="cash"/> پرداخت در محل</label></div><button class="primary-button" id="confirm-order" type="button" disabled>تایید سفارش <span>←</span></button><p class="checkout-note">برای این نسخه، ثبت سفارش و پرداخت فقط نمایشی است.</p></div>
+            <div class="tracking-card">
+              <div class="tracking-map" aria-label="نقشهٔ زندهٔ نشان و مسیر شبیه‌سازی‌شدهٔ پیک" role="img"><div id="tracking-map" class="tracking-map-canvas"></div><div class="tracking-map-top"><span class="tracking-map-live"><i></i> پیگیری آزمایشی</span><span class="tracking-map-brand">نشان</span></div><div class="map-chip">چهارراه لشکر <span>←</span> مقصد تو</div><div class="tracking-map-fallback" id="tracking-map-fallback" hidden>نقشه بارگذاری نشد؛ کلید نقشه و اتصال را بررسی کن.</div></div>
+              <div class="tracking-detail"><div class="tracking-status"><span class="status-pulse"></span><div><b id="tracking-status-title">در انتظار تایید سفارش</b><small id="tracking-status-copy">بعد از تایید، رستوران آماده‌سازی را شروع می‌کند.</small></div><strong id="tracking-eta">— دقیقه</strong></div><ol class="order-steps" aria-label="مراحل سفارش"><li class="done"><span>✓</span><b>ثبت سفارش</b><small>انجام شد</small></li><li class="active" aria-current="step"><span>♨</span><b>آماده‌سازی</b><small>در حال انجام</small></li><li><span>⌁</span><b>تحویل به پیک</b><small>در انتظار</small></li><li><span>⌂</span><b>تحویل سفارش</b><small>در انتظار</small></li></ol><div class="courier-card"><span class="courier-avatar">م</span><div><b>پیک مزه‌طوری</b><small id="courier-address">موقعیت تحویل روی نقشه نمایش داده می‌شود.</small></div><span class="courier-call">موقعیت زنده <span>⌖</span></span></div></div>
+            </div>
+          </section>
+          <section class="location-section section-pad workflow-screen" data-screen="restaurants" id="location"><div class="location-copy reveal"><span class="eyebrow">نزدیک‌ترین مزه‌ها</span><h2>رستوران‌های خوب<br/><em>همین نزدیکی‌ها</em></h2><p>موقعیتت را مشخص کن تا رستوران‌های اطراف را روی نقشه ببینی.</p><div class="selected-food" id="selected-food"><span>✦</span> غذای انتخاب‌شده: <b>هنوز انتخاب نشده</b></div><button class="primary-button locate-button" id="locate-button" type="button">تشخیص موقعیت من <span>⌖</span></button><button class="text-button" id="manual-location-button" type="button">یا نقطهٔ دلخواهت را روی نقشه انتخاب کن <span>↙</span></button><div class="location-status" id="location-status" role="status" aria-live="polite"><span class="status-dot"></span><span>برای شروع، موقعیت مکانی‌ات را مشخص کن.</span></div></div><div class="map-panel reveal"><div class="map-topline"><div><span class="map-kicker">جست‌وجوی اطراف</span><b>فاصلهٔ جست‌وجو <strong>۵ کیلومتر</strong></b></div><span class="map-live"><i></i> نقشهٔ نشان</span></div><div class="map-container" id="map"><div class="map-placeholder" id="map-placeholder"><div class="map-grid-art"><span class="map-road road-a"></span><span class="map-road road-b"></span><span class="map-road road-c"></span><span class="map-park">پارک</span><span class="map-river"></span><span class="map-pin">⌖</span></div><div class="map-placeholder-caption"><b>نقشهٔ تعاملی نشان</b><small>برای تعیین موقعیت روی نقشه کلیک کن.</small></div></div><div class="map-overlay-label"><i>⌖</i><span>موقعیت تو<br/><small>۵ کیلومتر اطراف</small></span></div></div><div class="map-bottomline"><span id="result-count">هنوز جست‌وجویی انجام نشده</span><button id="search-button" type="button" disabled>مشاهده رستوران‌ها روی نقشه <span>↗</span></button></div></div></section>
+          <section class="results-section section-pad workflow-screen" data-screen="restaurants" id="restaurants"><div class="section-heading"><div><span class="eyebrow dark-eyebrow">پیشنهادهای اطراف تو</span><h2>یک جای خوب برای <em>مزه‌کردن</em></h2><p id="results-subtitle">بعد از تعیین موقعیت، رستوران‌های نزدیکت را ببین.</p></div><div class="results-counter"><b id="results-number">۰</b><small>رستوران</small></div></div><div class="results-state" id="results-state"><span class="results-state-icon">⌖</span><b>هنوز موقعیتی برای جست‌وجو نداریم</b><p>موقعیتت را مشخص کن و جست‌وجوی رستوران‌های اطراف را شروع کن.</p><a href="#location" data-go="restaurants">رفتن به نقشه <span>↑</span></a></div><div class="restaurant-grid" id="restaurant-grid"></div></section>
+        </section>
+      </main>
+      <nav class="bottom-nav" aria-label="منوی اصلی"><a href="#location" data-go="restaurants"><span>⌖</span><b>رستوران‌یابی</b></a><a href="#tracking" data-go="order"><span>▤</span><b>پیگیری سفارش</b></a><a class="discount-link" href="#popular" data-go="menu"><span>✦</span><b>پیشنهادها</b></a><a class="current" href="#home" data-go="menu"><span>⌂</span><b>خانه</b></a></nav>
+      <footer class="site-footer" id="account"><span class="brand">مزه‌طوری</span> هر مزه، یک ماجرا.</footer>
+    </div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
